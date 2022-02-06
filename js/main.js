@@ -1,6 +1,6 @@
 import { Nave } from "./Nave.js";
 
-const Alcon = new Nave( "Alcon Milenario", 20, 15, 6 );
+const Halcón = new Nave( "Halcón Milenario", 20, 15, 6 );
 const F22 = new Nave( "F22", 16, 29, 8 );
 
 //Nave 1
@@ -11,7 +11,7 @@ const velocidad1 = document.getElementById("velocidad1")
 const btn_1 = document.getElementById('btn-1')
 
 btn_1.addEventListener( 'click', ()=> {
-    Alcon.dispararMisiles(F22)
+    Halcón.dispararMisiles(F22)
     hp2.innerText = "";
     hp2.innerText = `HP: ${F22.hp}`;
 })
@@ -25,16 +25,16 @@ const velocidad2 = document.getElementById("velocidad2")
 const btn_2 = document.getElementById('btn-2')
 
 btn_2.addEventListener( 'click', ()=> {
-    F22.dispararMisiles(Alcon)
+    F22.dispararMisiles(Halcón)
     hp1.innerText = "";
-    hp1.innerHTML = `HP: ${Alcon.hp}`
+    hp1.innerHTML = `HP: ${Halcón.hp}`
 })
 
 //Nave 1
-nombre1.innerText = Alcon.nombre;
-damage1.innerText = `Damage: ${Alcon.damage}`;
-hp1.innerText = `HP: ${Alcon.hp}`
-velocidad1.innerText = `Velocidad: ${Alcon.velocidad}`
+nombre1.innerText = Halcón.nombre;
+damage1.innerText = `Damage: ${Halcón.damage}`;
+hp1.innerText = `HP: ${Halcón.hp}`
+velocidad1.innerText = `Velocidad: ${Halcón.velocidad}`
 
 //Nave2
 nombre2.innerText = F22.nombre;
