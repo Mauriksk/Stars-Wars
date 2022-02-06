@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.lugar1{
+    display: flex;
+    width: 650px;
+    max-height: 240px;
+    background-color: rgb(233, 97, 97);
+}
+.atributos-lugar1{
+    padding: 20px;
+}
+
+.lugar2{
+    display: flex;
+    width: 650px;
+    height: 240px;
+    background-color: blueviolet;
+}
