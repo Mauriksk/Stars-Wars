@@ -29,6 +29,10 @@ body {
     }
 }
 
+h1{
+    color: whitesmoke;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
