@@ -4,6 +4,7 @@ body {
     background-size: 115%;
     animation: backanim 2s infinite;
     animation-timing-function: linear;
+    background-color: black;
 }
 
 @keyframes backanim {
@@ -29,8 +30,11 @@ body {
     }
 }
 
-h1{
+h1 {
     color: whitesmoke;
+    text-align: center;
+    border: solid black 2px;
+    display: inline;
 }
 
 .container {
@@ -43,16 +47,20 @@ h1{
     display: flex;
     width: 650px;
     max-height: 240px;
-    background-color: rgb(233, 97, 97);
+    color: wheat;
 }
 
 .atributos-lugar1 {
     padding: 20px;
 }
 
+#left-img {
+    transform: scaleX(-1);
+}
+
 .lugar2 {
     display: flex;
     width: 650px;
     height: 240px;
-    background-color: blueviolet;
+    color: wheat;
 }
