@@ -1,20 +1,52 @@
-.container{
+body {
+    background-image: url('../img/fondo.gif');
+    position: relative;
+    background-size: 115%;
+    animation: backanim 2s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes backanim {
+    0% {
+        background-position-y: 0;
+        background-position-x: 50%;
+    }
+    25% {
+        background-position-y: 50%;
+        background-position-x: 100%;
+    }
+    50% {
+        background-position-y: 100%;
+        background-position-x: 50%;
+    }
+    75% {
+        background-position-y: 50%;
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-y: 0;
+        background-position-x: 50%;
+    }
+}
+
+.container {
     display: flex;
     justify-content: space-around;
     height: 100%;
 }
 
-.lugar1{
+.lugar1 {
     display: flex;
     width: 650px;
     max-height: 240px;
     background-color: rgb(233, 97, 97);
 }
-.atributos-lugar1{
+
+.atributos-lugar1 {
     padding: 20px;
 }
 
-.lugar2{
+.lugar2 {
     display: flex;
     width: 650px;
     height: 240px;
